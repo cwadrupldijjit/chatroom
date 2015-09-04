@@ -1,34 +1,83 @@
 html {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 body {
-  height: 95%;
-  width: 100%;
-  font-family: sans-serif;
-  background-image: url('http://addyosmani.com/blog/wp-content/uploads/2013/04/unicorn.jpg');
+    height: 95%;
+    width: 100%;
+    font-family: sans-serif;
+    background-image: url('http://addyosmani.com/blog/wp-content/uploads/2013/04/unicorn.jpg');
 }
 
 .main-container {
-  width: 75%;
-  margin: 10px auto;
-  background: rgba(255, 255, 255, 0.86);
-  padding: 5px;
-  border-radius: 10px;
+    width: 75%;
+    margin: 10px auto;
+    background: rgba(255, 255, 255, 0.86);
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .main-container h1 {
-  text-align: center;
+    text-align: center;
 }
 
 .text-box {
-  margin: 0px auto;
-  width: 40%;
+    margin: 0px auto;
+    width: 40%;
 }
 
-p{
-  text-align: center;
-  margin: 3px 0;
-  font-size: 17px;
+.messages-container {
+    
+    margin-top: 30px;
+    box-shadow: 0 0 10px black;
+    border-radius: 8px;
+    
+    max-height: 500px;
+    
+    overflow: auto;
+}
+
+.message-box {
+    padding: 8px;
+    
+    position: relative;
+}
+
+p {
+    text-align: center;
+    margin: 0 0;
+    font-size: 17px;
+}
+
+.timestamp {
+    position: absolute;
+    left: 30px;
+    margin: 8px 0;
+}
+
+.odds {
+    background-color: white;
+}
+
+.odds:hover {
+    background-color: lightgray; 
+}
+
+.evens {
+    background-color: aliceblue;
+}
+
+.evens:hover {
+    background-color: lightblue;
+}
+
+.first {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.last {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
